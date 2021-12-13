@@ -1,0 +1,4 @@
+Browser chrome
+user chakri 
+password 123456789
+url http://www.google.com
