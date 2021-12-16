@@ -34,14 +34,12 @@ public class TC001_CreateOrganizationTest extends BaseClass {
 		home.Orginfoclick();
 		info.searchorgname(orgname);
 		info.searchOrgNamedd("Organization Name");
+		WebElement Orgname=null;
 		Methods.pageloadtimeout();
-		WebElement add = driver.findElement(By.xpath("//a[@title='Organizations']"));
-		System.out.println(add.isDisplayed());
-		System.out.println(add.getText());
-		Assert.assertEquals( add, orgname);
-		
-		
-		
+		Orgname = driver.findElement(By.xpath("//a[text()='"+orgname+"' and @title='Organizations']"));
+		System.out.println(Orgname.isDisplayed());
+		String actual=Orgname.getText();
+		Assert.assertEquals( orgname, actual);
 	}
 
 	@Test(groups = "Smoke Testing")
@@ -60,11 +58,11 @@ public class TC001_CreateOrganizationTest extends BaseClass {
 		Methods.refresh();
 		home.Orginfoclick();
 		info.searchorgname(orgname);
-		info.searchorgname(orgname);
 		info.searchOrgNamedd("Phone");
-		WebElement add = driver.findElement(By.xpath("//a[@title='Organizations']"));
-		System.out.println(add.isDisplayed());
-		String actual = add.getText();
-		Assert.assertEquals(orgname, actual);
+		WebElement Orgname=null;
+		Orgname = driver.findElement(By.xpath("//a[text()='"+orgname+"' and @title='Organizations']"));
+		System.out.println(Orgname.isDisplayed());
+		String actual=Orgname.getText();
+		Assert.assertEquals( orgname, actual);
 	}
 }

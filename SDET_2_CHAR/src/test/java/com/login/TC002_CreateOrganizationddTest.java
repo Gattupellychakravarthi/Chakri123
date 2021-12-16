@@ -36,10 +36,11 @@ public class TC002_CreateOrganizationddTest extends BaseClass {
 		home.Orginfoclick();
 		info.searchorgname(orgname);
 		info.searchOrgNamedd("Organization Name");
-		WebElement add = driver.findElement(By.xpath("//a[@title='Organizations']"));
-		add.isDisplayed();
-		String actual = add.getText();
-		Assert.assertEquals(orgname, actual);
+		WebElement Orgname=null;
+		Orgname = driver.findElement(By.xpath("//a[text()='"+orgname+"' and @title='Organizations']"));
+		System.out.println(Orgname.isDisplayed());
+		String actual=Orgname.getText();
+		Assert.assertEquals( orgname, actual);
 
 	}
 
