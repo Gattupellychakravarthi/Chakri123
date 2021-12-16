@@ -46,6 +46,7 @@ public class TC003_CreateContactTest extends BaseClass {
 		Homepage home = new Homepage(driver);
 		ContactInfo info = new ContactInfo(driver);
 		Contactpage contact = new Contactpage(driver);
+		WebDriverUtil Methods = new WebDriverUtil(driver);
 		home.conatactinfo();
 		info.CreatContact();
 		String lastname = JavaUtil.objForJavaUtil().getlastname();
@@ -55,6 +56,7 @@ public class TC003_CreateContactTest extends BaseClass {
 		info.searchcreatedcontact(lastname);
 		info.searchcontactdd("Last Name");
 		WebElement Lastname = null;
+		Methods.pageloadtimeout();
 		Lastname=driver.findElement(By.xpath("//a[text()='"+lastname+"' and @title='Contacts']"));
 		String actual = Lastname.getText();
 		Assert.assertEquals(lastname,actual);
