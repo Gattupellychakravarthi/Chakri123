@@ -8,7 +8,7 @@
           <include name="BrowserLunchandGetUrl"/>
           <include name="setUp"/>
           <include name="LoginintoApp"/>
-          <include name="CreatContact"/>
+          <include name="CreatContactOnly"/>
           <include name="CloseBrowser"/>
           <include name="disconnectfromDB"/>
           <include name="LogoutApp"/>

@@ -2,39 +2,39 @@
 <testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-16T22:44:22 IST" name="Default suite" finished-at="2021-12-16T22:45:12 IST" duration-ms="50516">
+  <suite started-at="2021-12-17T00:08:53 IST" name="Default suite" finished-at="2021-12-17T00:09:45 IST" duration-ms="51726">
     <groups>
-      <group name="Regression Testing">
-        <method signature="TC003_CreateContactTest.CreatContact()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" name="CreatContact" class="com.login.TC003_CreateContactTest"/>
-      </group> <!-- Regression Testing -->
+      <group name="Smoke Testing">
+        <method signature="TC003_CreateContactTest.CreatContactOnly()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" name="CreatContactOnly" class="com.login.TC003_CreateContactTest"/>
+      </group> <!-- Smoke Testing -->
     </groups>
-    <test started-at="2021-12-16T22:44:22 IST" name="Default test" finished-at="2021-12-16T22:45:12 IST" duration-ms="50516">
+    <test started-at="2021-12-17T00:08:53 IST" name="Default test" finished-at="2021-12-17T00:09:45 IST" duration-ms="51726">
       <class name="com.login.TC003_CreateContactTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-16T22:44:22 IST" name="setUp" finished-at="2021-12-16T22:44:22 IST" duration-ms="33" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-17T00:08:53 IST" name="setUp" finished-at="2021-12-17T00:08:53 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="BrowserLunchandGetUrl()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-16T22:44:22 IST" name="BrowserLunchandGetUrl" finished-at="2021-12-16T22:44:32 IST" duration-ms="9870" status="PASS">
+        <test-method is-config="true" signature="BrowserLunchandGetUrl()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-17T00:08:53 IST" name="BrowserLunchandGetUrl" finished-at="2021-12-17T00:09:00 IST" duration-ms="7219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserLunchandGetUrl -->
-        <test-method is-config="true" signature="LoginintoApp()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-16T22:44:32 IST" name="LoginintoApp" finished-at="2021-12-16T22:44:38 IST" duration-ms="5714" status="PASS">
+        <test-method is-config="true" signature="LoginintoApp()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-17T00:09:00 IST" name="LoginintoApp" finished-at="2021-12-17T00:09:05 IST" duration-ms="4932" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginintoApp -->
-        <test-method signature="CreatContact()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-16T22:44:38 IST" name="CreatContact" finished-at="2021-12-16T22:45:07 IST" duration-ms="29275" status="PASS">
+        <test-method signature="CreatContactOnly()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-17T00:09:05 IST" name="CreatContactOnly" finished-at="2021-12-17T00:09:39 IST" duration-ms="33947" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreatContact -->
-        <test-method is-config="true" signature="LogoutApp()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-16T22:45:07 IST" name="LogoutApp" finished-at="2021-12-16T22:45:12 IST" duration-ms="5304" status="PASS">
+        </test-method> <!-- CreatContactOnly -->
+        <test-method is-config="true" signature="LogoutApp()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-17T00:09:39 IST" name="LogoutApp" finished-at="2021-12-17T00:09:45 IST" duration-ms="5319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LogoutApp -->
-        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-16T22:45:12 IST" name="CloseBrowser" finished-at="2021-12-16T22:45:12 IST" duration-ms="246" status="PASS">
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-17T00:09:45 IST" name="CloseBrowser" finished-at="2021-12-17T00:09:45 IST" duration-ms="270" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseBrowser -->
-        <test-method is-config="true" signature="disconnectfromDB()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-16T22:45:13 IST" name="disconnectfromDB" finished-at="2021-12-16T22:45:13 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="disconnectfromDB()[pri:0, instance:com.login.TC003_CreateContactTest@ffaa6af]" started-at="2021-12-17T00:09:45 IST" name="disconnectfromDB" finished-at="2021-12-17T00:09:45 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disconnectfromDB -->

@@ -60,6 +60,7 @@ public class TC001_CreateOrganizationTest extends BaseClass {
 		info.searchorgname(orgname);
 		info.searchOrgNamedd("Organization Name");
 		WebElement Orgname = null;
+		Methods.pageloadtimeout();
 		Orgname = driver.findElement(By.xpath("//a[text()='" + orgname + "' and @title='Organizations']"));
 		System.out.println(Orgname.isDisplayed());
 		String actual = Orgname.getText();
