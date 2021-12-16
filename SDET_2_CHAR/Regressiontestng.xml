@@ -6,11 +6,11 @@
 			<include name="Regression Testing"></include>
 		</run>
 	</groups>
-	<classes>
-		<test thread-count="5" name="Test">
+	<test thread-count="5" name="Test">
+		<classes>
 			<class name="com.login.TC001_CreateOrganizationTest" />
 			<class name="com.login.TC002_CreateOrganizationddTest" />
 			<class name="com.login.TC003_CreateContactTest" />
-	</classes>
-</test> <!-- Test -->
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
