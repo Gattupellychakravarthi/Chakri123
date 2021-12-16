@@ -39,8 +39,7 @@ public class TC001_CreateOrganizationTest extends BaseClass {
 		System.out.println(add.isDisplayed());
 		System.out.println(add.getText());
 		Assert.assertEquals( add, orgname);
-		System.out.println(add);
-		System.out.println(orgname);
+		
 		
 		
 	}
