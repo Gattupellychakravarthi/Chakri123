@@ -33,7 +33,7 @@ public class TC003_CreateContactTest extends BaseClass {
 		Methods.switchtochild();
 		contact.Contactsave();
 		home.conatactinfo();
-		info.searchcreatedcontact(orgname);
+		info.searchcreatedcontact(orgname,"Contact Id");
 		WebElement element=driver.findElement(By.xpath("//a[@title='Organizations']"));
 		Assert.assertEquals("chakri3", element.getText());
 	}
@@ -48,7 +48,7 @@ public class TC003_CreateContactTest extends BaseClass {
 		contact.CreatOnlylastname();
 		contact.Contactsave();
 		home.conatactinfo();
-		info.searchcreatedcontact("Last Name");
+		info.searchcreatedcontact("Last Name","Last Name");
 		WebElement element=driver.findElement(By.xpath("//a[@title='Organizations']"));
 		Assert.assertEquals("chakri3", element.getText());
 	}
