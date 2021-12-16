@@ -46,8 +46,11 @@ public class ContactInfo {
 	public void CreatContact() {
 		creatcontactimg.click();
 	}
-	public void searchcreatedcontact(String value1, String value) {
-		searchcretedcontactlink.sendKeys(value1);
+	public void searchcreatedcontact(String value) {
+		searchcretedcontactlink.sendKeys(value);
+		
+	}
+	public void searchcontactdd(String value) {
 		WebDriverUtil util = new WebDriverUtil(driver);
 		util.selectvisibletextfromdd(searchddlink,value);
 		clicksearchlink.click();

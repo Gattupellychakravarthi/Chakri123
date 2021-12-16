@@ -33,9 +33,12 @@ public class TC003_CreateContactTest extends BaseClass {
 		Methods.switchtochild();
 		contact.Contactsave();
 		home.conatactinfo();
-		info.searchcreatedcontact(orgname,"Contact Id");
-		WebElement element=driver.findElement(By.xpath("//a[@title='Organizations']"));
-		Assert.assertEquals("chakri3", element.getText());
+		info.searchcreatedcontact("chakri");
+		info.searchcontactdd("Organization Name");
+		WebElement Orgname=null;
+		Orgname=driver.findElement(By.xpath("//a[text()='chakri3' and @title='Organizations']"));
+		String actual =Orgname.getText();
+		Assert.assertEquals("chakri3",actual);
 	}
 
 	@Test(groups = "Smoke Testing")
@@ -45,12 +48,16 @@ public class TC003_CreateContactTest extends BaseClass {
 		Contactpage contact = new Contactpage(driver);
 		home.conatactinfo();
 		info.CreatContact();
-		contact.CreatOnlylastname();
+		String lastname = JavaUtil.objForJavaUtil().getlastname();
+		contact.CreatOnlylastname(lastname);
 		contact.Contactsave();
 		home.conatactinfo();
-		info.searchcreatedcontact("Last Name","Last Name");
-		WebElement element=driver.findElement(By.xpath("//a[@title='Organizations']"));
-		Assert.assertEquals("chakri3", element.getText());
+		info.searchcreatedcontact(lastname);
+		info.searchcontactdd("Last Name");
+		WebElement Lastname = null;
+		Lastname=driver.findElement(By.xpath("//a[text()='"+lastname+"' and @title='Contacts']"));
+		String actual = Lastname.getText();
+		Assert.assertEquals(lastname,actual);
 	}
 
 }

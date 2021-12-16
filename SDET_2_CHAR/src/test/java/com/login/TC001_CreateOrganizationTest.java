@@ -34,12 +34,12 @@ public class TC001_CreateOrganizationTest extends BaseClass {
 		home.Orginfoclick();
 		info.searchorgname(orgname);
 		info.searchOrgNamedd("Organization Name");
-		WebElement Orgname=null;
+		WebElement Orgname = null;
 		Methods.pageloadtimeout();
-		Orgname = driver.findElement(By.xpath("//a[text()='"+orgname+"' and @title='Organizations']"));
+		Orgname = driver.findElement(By.xpath("//a[text()='" + orgname + "' and @title='Organizations']"));
 		System.out.println(Orgname.isDisplayed());
-		String actual=Orgname.getText();
-		Assert.assertEquals( orgname, actual);
+		String actual = Orgname.getText();
+		Assert.assertEquals(orgname, actual);
 	}
 
 	@Test(groups = "Smoke Testing")
@@ -52,17 +52,17 @@ public class TC001_CreateOrganizationTest extends BaseClass {
 		info.creatorg();
 		String orgname = JavaUtil.objForJavaUtil().getfirstname() + JavaUtil.objForJavaUtil().generateRandomNumber();
 		creat.CreatOrgNameClick(orgname);
-	    creat.CreatPhonenumber();
+		creat.CreatPhonenumber();
 		creat.SendOrgName();
 		Methods.pageloadtimeout();
 		Methods.refresh();
 		home.Orginfoclick();
 		info.searchorgname(orgname);
 		info.searchOrgNamedd("Organization Name");
-		WebElement Orgname=null;
-		Orgname = driver.findElement(By.xpath("//a[text()='"+orgname+"' and @title='Organizations']"));
+		WebElement Orgname = null;
+		Orgname = driver.findElement(By.xpath("//a[text()='" + orgname + "' and @title='Organizations']"));
 		System.out.println(Orgname.isDisplayed());
-		String actual=Orgname.getText();
-		Assert.assertEquals( orgname, actual);
+		String actual = Orgname.getText();
+		Assert.assertEquals(orgname, actual);
 	}
 }

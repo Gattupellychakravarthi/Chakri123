@@ -24,7 +24,7 @@ public class Contactpage {
 	private WebElement createdorglink;
 	@FindBy(css = "select[name='salutationtype']")
 	private WebElement contactnamedd;
-	@FindBy(name="button")
+	@FindBy(name = "button")
 	private WebElement clicksavelink;
 
 	public WebElement getClicksavelink() {
@@ -71,9 +71,12 @@ public class Contactpage {
 		lastname.sendKeys(js.getlastname());
 		movetochildimg.click();
 	}
-	public void CreatOnlylastname() {
-		JavaUtil js = new JavaUtil();
-		lastname.sendKeys(js.getlastname());
+
+	public String CreatOnlylastname(String value) {
+
+		lastname.sendKeys(value);
+		return value;
+
 	}
 
 	public void contactnamedd(String text) {
@@ -87,6 +90,7 @@ public class Contactpage {
 		createdorglink.click();
 
 	}
+
 	public void Contactsave() {
 		clicksavelink.click();
 	}

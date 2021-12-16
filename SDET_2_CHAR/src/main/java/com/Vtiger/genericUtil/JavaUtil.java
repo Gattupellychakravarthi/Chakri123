@@ -12,6 +12,7 @@ public class JavaUtil {
 
 	}
 
+
 	/**
 	 * @author HP Description : this method generate Random numbers
 	 * @return random number
