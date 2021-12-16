@@ -107,9 +107,8 @@
 				</plugins>
 			</build>
 		</profile>
-
 	<profile>
-		<id>Smoke Testing</id>
+		<id>SmokeTesting</id>
 		<build>
 			<plugins>
 				<plugin>
