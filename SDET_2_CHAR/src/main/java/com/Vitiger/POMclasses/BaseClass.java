@@ -15,6 +15,7 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.Vtiger.genericUtil.FileUtil;
 import com.Vtiger.genericUtil.WebDriverUtil;
@@ -28,12 +29,12 @@ public class BaseClass {
 	public void setUp() {
 		System.out.println("Connect to DB");
 	}
-   // @Parameters("Browser")
+    @Parameters("Browser")
 	@BeforeClass(groups = { "Smoke Testing", "Regression Testing" })
 	
-	public void BrowserLunchandGetUrl() throws IOException {
+	public void BrowserLunchandGetUrl(String Browser) throws IOException {
 	
-		String Browser = FileUtil.objforfileutil().readDatafromPropfile("browser");
+		//String Browser = FileUtil.objforfileutil().readDatafromPropfile("browser");
 		if (Browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (Browser.equalsIgnoreCase("firefox")) {
