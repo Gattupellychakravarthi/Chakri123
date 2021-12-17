@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.login.TC003_CreateContactTest">
+      <class name="com.login.TC001_CreateOrganizationTest">
         <methods>
           <include name="BrowserLunchandGetUrl"/>
           <include name="setUp"/>
           <include name="LoginintoApp"/>
-          <include name="CreatContactOnly"/>
+          <include name="OrgNameWithNumber"/>
           <include name="CloseBrowser"/>
           <include name="disconnectfromDB"/>
           <include name="LogoutApp"/>
         </methods>
-      </class> <!-- com.login.TC003_CreateContactTest -->
+      </class> <!-- com.login.TC001_CreateOrganizationTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
