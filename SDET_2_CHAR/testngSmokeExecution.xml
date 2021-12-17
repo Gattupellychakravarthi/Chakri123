@@ -6,7 +6,15 @@
 			<include name="Smoke Testing"></include>
 		</run>
 	</groups>
-	<test thread-count="5" name="Test">
+	<test name="TestRunner1">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.login.TC001_CreateOrganizationTest" />
+			<class name="com.login.TC003_CreateContactTest" />
+		</classes>
+	</test> <!-- Test -->
+	<test name="TestRunner2">
+		<parameter name="Browser" value="firefox"></parameter>
 		<classes>
 			<class name="com.login.TC001_CreateOrganizationTest" />
 			<class name="com.login.TC003_CreateContactTest" />
