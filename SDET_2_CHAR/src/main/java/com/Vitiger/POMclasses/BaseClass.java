@@ -29,12 +29,14 @@ public class BaseClass {
 	public void setUp() {
 		System.out.println("Connect to DB");
 	}
-    @Parameters("Browser")
+   // @Parameters("Browser")
 	@BeforeClass(groups = { "Smoke Testing", "Regression Testing" })
 	
-	public void BrowserLunchandGetUrl(String Browser) throws IOException {
+	public void BrowserLunchandGetUrl() throws IOException {
 	
 		//String Browser = FileUtil.objforfileutil().readDatafromPropfile("browser");
+		String Browser= System.getProperty("Browser");
+		System.out.println(Browser);
 		if (Browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
 		} else if (Browser.equalsIgnoreCase("firefox")) {
