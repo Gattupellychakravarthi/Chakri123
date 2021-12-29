@@ -6,6 +6,7 @@
       <class name="com.login.TC001_CreateOrganizationTest">
         <methods>
           <include name="BrowserLunchandGetUrl"/>
+          <include name="CreatOrganization"/>
           <include name="setUp"/>
           <include name="LoginintoApp"/>
           <include name="OrgNameWithNumber"/>

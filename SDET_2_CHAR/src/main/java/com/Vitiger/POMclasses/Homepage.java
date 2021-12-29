@@ -61,5 +61,7 @@ public class Homepage {
     public void conatactinfo() {
     	contactlink.click();
     }
-   
+   public void selectquotedd() {
+	   
+   }
 }
